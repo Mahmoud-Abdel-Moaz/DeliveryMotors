@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_your_orders"
+            android:icon="@drawable/baseline_description_black_18"
+            android:title="Your orders" />
+        <item
+            android:id="@+id/nav_customer_service"
+            android:icon="@drawable/baseline_help_black_18"
+            android:title="Customer Service" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/baseline_vpn_key_black_18"
+            android:title="Log Out" />
+    </group>
+
+</menu>

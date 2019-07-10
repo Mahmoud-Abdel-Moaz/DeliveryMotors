@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/MainTheme"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:popupTheme="@style/MainTheme"
+    tools:context=".MainActivity">
+    <!-- tools:showIn="@layout/app_bar_main" -->
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Location Search"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/but_startRaq"
+        android:background="@drawable/buttonwithoutborder"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="Start Order" />
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInVerify">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify your mobile number"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the pin you have received via SMS on +0101234567"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Code"
+            android:ems="10"
+            android:inputType="number" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/moto"/>
+
+        <Button
+            android:id="@+id/but_countinue"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonradshape"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Countinue" />
+    </LinearLayout>
+
+</LinearLayout>
